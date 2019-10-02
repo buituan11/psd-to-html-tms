@@ -12,7 +12,7 @@
  	<!-- <link rel="stylesheet" href="fontawesome.css">		????? -->
 </head>
 <body>
-		<header class="container-fluid">
+	<header class="head container-fluid d-none d-xl-block">
 			<div class="header-contact">
 				<p><i class="fas fa-phone-alt"></i> 1900 633 625</p>
 				<p><i class="fas fa-envelope"></i> travel@tmstravel.vn, dulich@tmstravel.vn</p>
@@ -23,11 +23,19 @@
 			</div>
 			<div class="header-menu container-fluid">
 				<div class="row">
-					<div class="logo col-md-4">
+					<div class="logo col-xl-4 col-md-3">
 						<img src="assets/images/logo.png" alt="">
 					</div>
-					<ul class="menu col-md-8">
-						<li><i class="fas fa-search"></i></li>
+					<ul class="menu col-xl-8 col-md-9">
+						<li>
+							<i class="fas fa-search" onclick="search()"></i>
+							<div id="search-inp">
+								<form action="">
+									<input type="text" placeholder="Search">
+									<button type="submit" class="btn btn-success">Search</button>
+								</form>
+							</div>
+						</li>
 						<li>LIÊN HỆ</li>
 						<li>THƯ VIỆN</li>
 						<li>TIN TỨC</li>
@@ -40,14 +48,51 @@
 				</div>
 			</div>
 		</header>
+		<header class="head-moblie container-fluid d-block d-xl-none">
+			<div class="header-contact-m">
+				<p><i class="fas fa-phone-alt"></i> 1900 633 625</p>
+				<p><i class="fas fa-envelope"></i> travel@tmstravel.vn, dulich@tmstravel.vn</p>
+				<p><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-pinterest-p"></i><i class="fab fa-youtube"></i><i class="fab fa-linkedin"></i><i class="fab fa-google-plus-g"></i></p>
+				<p>Ngôn ngữ <i class="fas fa-sort-down"></i></p>				
+			</div>
+			<div class="header-menu-m">
+				<div class="row">
+					<div class="logo-m col-3">
+						<img src="assets/images/logo.png" alt="">
+					</div>
+					<div class="menu-m col-9">
+						<button onclick="openMenu()"><i class="fas fa-bars"></i></button>
+						<div id="vertical-menu" style="display: none;">
+							<button onclick="closeMenu()">X</button>
+							<p>TRANG CHỦ</p>
+							<p>GIỚI THIỆU</p>
+							<p>TOUR</p>
+							<p>DỊCH VỤ</p>
+							<p>TIN TỨC</p>
+							<p>THƯ VIỆN</p>
+							<p>LIÊN HỆ</p>
+							<form action="">
+								<input type="text" placeholder="Search">
+								<button type="submit" class="btn btn-success">Search</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
 		<section class="intro">
-			<img src="assets/images/chevron-left.png" alt="">
+			<img src="assets/images/chevron-left.png" alt="" onclick="intro(-1)">
 			<div class="intro-title">
 				<h1>Khám phá Cambodia</h1>
 				<p>cùng TMS Travel</p>
 				<button>Xem thêm</button>
 			</div>
-			<img src="assets/images/chevron-right.png" alt="">
+			<img src="assets/images/chevron-right.png" alt=""  onclick="intro(1)">
+			<div class="intro-dot">
+				<img src="assets/images/change-slide-check.png" alt="" class="intro-dot-check" onclick="introCheck(1)">
+				<img src="assets/images/change-slide-uncheck.png" alt="" class="intro-dot-check" onclick="introCheck(2)">
+				<img src="assets/images/change-slide-uncheck.png" alt="" class="intro-dot-check" onclick="introCheck(3)">
+			</div>
 		</section>
 		<section class="comment">
 			<div class="row">
@@ -72,7 +117,7 @@
 		<section class="tour">
 			<div class="option">
 				<div class="row">
-					<div class="option-item col-xl-3">
+					<div class="option-item col-xl-3 col-6">
 						<p>Loại tour</p>
 						<form action="">
 							<select name="AAA">
@@ -83,7 +128,7 @@
 						 	</select>	
 						</form>
 					</div>
-					<div class="option-item col-xl-3">
+					<div class="option-item col-xl-3 col-6">
 						<p>Địa điểm</p>
 						<form action="">
 							<select name="AAA">
@@ -94,7 +139,7 @@
 						 	</select>	
 						</form>
 					</div>
-					<div class="option-item col-xl-3">
+					<div class="option-item col-xl-3 col-6">
 						<p>Thời gian</p>
 						<form action="">
 							<select name="AAA">
@@ -105,7 +150,7 @@
 						 	</select>	
 						</form>
 					</div>
-					<div class="option-item col-xl-3">
+					<div class="option-item col-xl-3 col-6">
 						<p>Địa điểm khởi hành</p>
 						<form action="">
 							<select name="AAA">
@@ -116,7 +161,7 @@
 						 	</select>	
 						</form>
 					</div>
-					<div class="option-item col-xl-3">
+					<div class="option-item col-xl-3 col-6">
 						<p>Giá từ</p>
 						<form action="">
 							<select name="AAA">
@@ -127,7 +172,7 @@
 						 	</select>	
 						</form>
 					</div>
-					<div class="option-item col-xl-3">
+					<div class="option-item col-xl-3 col-6">
 						<p>Giá đến</p>
 						<form action="">
 							<select name="AAA">
@@ -138,14 +183,17 @@
 						 	</select>	
 						</form>
 					</div>
-					<div class="option-search col-xl-6">
+					<div class="option-search col-xl-6 col-12">
 						<button class="container-fluid">TÌM KIẾM</button>
 					</div>
 				</div>
 			</div>
 			<div class="place">
-				<p>NHỮNG TOUR ĐƯỢC YÊU THÍCH <span style="margin-left: 20px;font-size: 16px; color:var(--redColor);">/ Xem tất cả các tour</span></p>
-				<i class="fas fa-chevron-left"></i>
+				<div class="place-title">
+					<p>NHỮNG TOUR ĐƯỢC YÊU THÍCH</p>
+					<p>/ Xem tất cả các tour</p>
+				</div>
+				<i class="fas fa-chevron-left" onclick="place(-1)"></i>
 				<div class="place-slide">
 					<div class="place-item">
 						<div class="sale">25%</div>
@@ -154,13 +202,13 @@
 							<p>Hà Nội - Siêm Riệp - Phnompenh - Hà Nội 4 ngày 3 đêm</p>
 							<p><img src="assets/images/star.png" alt=""><img src="assets/images/star.png" alt=""><img src="assets/images/star.png" alt=""><img src="assets/images/star.png" alt=""><img src="assets/images/star.png" alt=""></p>
 							<p><i class="far fa-calendar-alt"></i> Lịch khởi hành: <span style="color: var(--redColor); font-weight: bold;">Thú 6 hàng tuần </span></p>
-							<div class="place-price">
-								<p><span style="font-size: 20px;font-weight: bold; color:var(--redColor); margin-right: 20px;">10,990,000đ</span> 11,990,000đ</p>
-								<button>ĐẶT TOUR</button>
+							<div class="place-price container-fluid">
+									<p><span>10,990,000đ</span> 11,990,000đ</p>
+									<button>ĐẶT TOUR</button>
 							</div>
 						</div>
 					</div>
-					<div class="place-item">
+					<div class="place-item d-none d-xl-block">
 						<div class="sale">25%</div>
 						<div class="place-img" style="background-image: url('assets/images/favourite-tour-2.jpg')"></div>
 						<div class="place-detail">
@@ -173,7 +221,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="place-item">
+					<div class="place-item d-none d-xl-block">
 						<div class="sale">25%</div>
 						<div class="place-img" style="background-image: url('assets/images/favourite-tour-3.jpg')"></div>
 						<div class="place-detail">
@@ -187,11 +235,14 @@
 						</div>
 					</div>
 				</div>
-				<i class="fas fa-chevron-right"></i>
+				<i class="fas fa-chevron-right" onclick="place(1)"></i>
 			</div>
 		</section>
 		<section class="destination">
-				<p>ĐIỂM ĐẾN HÀNG ĐẦU <span style="margin-left: 20px;font-size: 16px; color:var(--redColor);">/ Xem tất cả các tour</span></p>
+				<div class="destination-title">
+					<p>ĐIỂM ĐẾN HÀNG ĐẦU</p>
+					<p>/ Xem tất cả các tour</p>
+				</div>
 				<p>Khám phá ngay các tour, hoạt động du lịch và địa điểm tham quan cho hành trình du lịch của bạn</p>
 				<div class="destination-slide container-fluid">
 					<div class="row">
@@ -211,22 +262,25 @@
 				</div>
 		</section>
 		<section class="inspire">
-				<p>CẢM HỨNG DU LỊCH <span style="margin-left: 20px;font-size: 16px; color:var(--redColor);">/ Xem tất cả các bài viết</span></p>
+				<div class="inspire-title">
+					<p>CẢM HỨNG DU LỊCH</p>
+					<p>/ Xem tất cả các bài viết</p>
+				</div>
 				<p>Những kinh nghiệm thú vị về du lịch được chia sẻ ở đây</p>
-				<div class="inspire-item ">
-						<div class="inspire-img " style="background-image: url('assets/images/inspire-1.jpg');">
+				<div class="inspire-item row">
+						<div class="inspire-img col-xl-3 col-6" style="background-image: url('assets/images/inspire-1.jpg');">
 							<p>Những món ăn vặt Nha Trang nhất định phả ...</p>
 							<p>Ăn uống giờ đây không chỉ là nhu cầu mà còn là niềm đam mê của rất nhiều người. Nếu bạn cũng là một  ...</p>
 						</div>
-						<div class="inspire-img " style="background-image: url('assets/images/inspire-2.jpg');">
+						<div class="inspire-img col-xl-3 col-6" style="background-image: url('assets/images/inspire-2.jpg');">
 							<p>Những món ăn vặt Nha Trang nhất định phả ...</p>
 							<p>Ăn uống giờ đây không chỉ là nhu cầu mà còn là niềm đam mê của rất nhiều người. Nếu bạn cũng là một  ...</p>
 						</div>
-						<div class="inspire-img " style="background-image: url('assets/images/inspire-3.jpg');">
+						<div class="inspire-img col-xl-3 col-6" style="background-image: url('assets/images/inspire-3.jpg');">
 							<p>Những món ăn vặt Nha Trang nhất định phả ...</p>
 							<p>Ăn uống giờ đây không chỉ là nhu cầu mà còn là niềm đam mê của rất nhiều người. Nếu bạn cũng là một  ...</p>
 						</div>
-						<div class="inspire-img " style="background-image: url('assets/images/inspire-4.jpg');">
+						<div class="inspire-img col-xl-3 col-6" style="background-image: url('assets/images/inspire-4.jpg');">
 							<p>Những món ăn vặt Nha Trang nhất định phả ...</p>
 							<p>Ăn uống giờ đây không chỉ là nhu cầu mà còn là niềm đam mê của rất nhiều người. Nếu bạn cũng là một  ...</p>
 						</div>
@@ -234,61 +288,74 @@
 				</div>
 		</section>
 		<section class="customer">
+				<div class="customer-slide">
+					<button><i class="fas fa-chevron-left" onclick="customer(-1)"></i></button>
+					<button><i class="fas fa-chevron-right" onclick="customer(1)"></i></button>
+					<div class="customer-item ">
+						<div class="customer-img" style="background-image: url('assets/images/customer-1.jpg');"></div>
+						<div class="customer-ava"></div>
+						<div class="customer-detail">
+							<p>Phùng Thủy Tiên</p>
+							<p>Hà Nội - Việt Nam</p>
+							<p>“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum, nulla ut eleifend pharetra. ”</p>
+						</div>
+					</div>
+					<div class="customer-item d-none d-xl-block">
+						<div class="customer-img" style="background-image: url('assets/images/customer-2.jpg');"></div>
+						<div class="customer-ava"></div>
+						<div class="customer-detail">
+							<p>Phùng Thủy Tiên</p>
+							<p>Hà Nội - Việt Nam</p>
+							<p>“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum, nulla ut eleifend pharetra. ”</p>
+						</div>
+					</div>
+					<div class="customer-item d-none d-xl-block">
+						<div class="customer-img" style="background-image: url('assets/images/customer-3.jpg');"></div>
+						<div class="customer-ava"></div>
+						<div class="customer-detail">
+							<p>Phùng Thủy Tiên</p>
+							<p>Hà Nội - Việt Nam</p>
+							<p>“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum, nulla ut eleifend pharetra. ”</p>
+						</div>
+					</div>
+				</div>
 				<div class="customer-title">
 					<p>KHÁCH HÀNG NÓI GÌ VỀ CHÚNG TÔI</p>
 					<p>Những phản hồi thực tế từ những khách hàng đã sử dụng dịch vụ của chúng tôi.</p>
 				</div>
-				<div class="customer-eg">
-					<div class="customer-eg-slide">
-						<div class="customer-eg-item">
-								<div class="customer-eg-img" style="background-image: url('assets/images/customer-1.jpg');"></div>
-								<img src="assets/images/customer-ava.png" alt="">
-								<p>Phùng Thủy Tiên</p>
-								<p>Hà Nội - Việt Nam</p>
-								<p>“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum, nulla ut eleifend pharetra. ”</p>
-						</div>		
-						<div class="customer-eg-item">
-								<div class="customer-eg-img" style="background-image: url('assets/images/customer-2.jpg');"></div>
-								<img src="assets/images/customer-ava.png" alt="">
-								<p>Phùng Thủy Tiên</p>
-								<p>Hà Nội - Việt Nam</p>
-								<p>“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum, nulla ut eleifend pharetra. ”</p>
-						</div>						
-						<div class="customer-eg-item">
-								<div class="customer-eg-img" style="background-image: url('assets/images/customer-3.jpg');"></div>
-								<img src="assets/images/customer-ava.png" alt="">
-								<p>Phùng Thủy Tiên</p>
-								<p>Hà Nội - Việt Nam</p>
-								<p>“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum, nulla ut eleifend pharetra. ”</p>
-						</div>		
+				<div class="customer-brand">
+					<div class="brand-title">
+						<p>ĐỐI TÁC</p>
+						<p>TMS Travel là đối tác của các nhãn hàng lớn để mang lại cho bạn các chương trình ưu đãi độc quyền</p>
 					</div>
-				</div>
-				<div class="customer-branch">
-					<p>ĐỐI TÁC</p>
-					<p>TMS Travel là đối tác của các nhãn hàng lớn để mang lại cho bạn các chương trình ưu đãi độc quyền</p>
-					<div class="customer-slide">
-						<img src="assets/images/brand-left.png" alt="">
-						<div class="customer-item"><img src="assets/images/brand-1.png" alt=""></div>
-						<div class="customer-item"><img src="assets/images/brand-2.png" alt=""></div>
-						<div class="customer-item"><img src="assets/images/brand-3.png" alt=""></div>
-						<div class="customer-item"><img src="assets/images/brand-4.png" alt=""></div>
-						<div class="customer-item"><img src="assets/images/brand-5.png" alt=""></div>
-						<div class="customer-item"><img src="assets/images/brand-6.png" alt=""></div>
-						<img src="assets/images/brand-right.png" alt="">
+					<div class="brand-slide ">
+						<img src="assets/images/brand-left.png" alt="" class="d-none d-xl-block" onclick="brand(-1)">
+						<img src="assets/images/brand-right.png" alt="" class="d-none d-xl-block" onclick="brand(1)">
+						<div class="container-fluid">
+						<div class="row">
+							<img src="assets/images/brand-1.jpg" alt="" class="brand-img col-xl-2 col-4">
+							<img src="assets/images/brand-2.jpg" alt="" class="brand-img col-xl-2 col-4">
+							<img src="assets/images/brand-3.jpg" alt="" class="brand-img col-xl-2 col-4">
+							<img src="assets/images/brand-4.jpg" alt="" class="brand-img col-xl-2 col-4">
+							<img src="assets/images/brand-5.jpg" alt="" class="brand-img col-xl-2 col-4">
+							<img src="assets/images/brand-6.jpg" alt="" class="brand-img col-xl-2 col-4">
+						</div>
+						</div>
 					</div>
 				</div>
 		</section>
 		<section class="sign-up">
-			<p><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-pinterest-p"></i><i class="fab fa-youtube"></i><i class="fab fa-linkedin"></i><i class="fab fa-google-plus-g"></i></p>
-			<p>Các deal du lịch giảm giá đến 60% sẽ được gửi đến bạn</p>			
-			<form action="">
-				<input type="text" placeholder="Nhập Email">
-				<button type="submit">Đăng ký</button>
-			</form>
+				<p><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-pinterest-p"></i><i class="fab fa-youtube"></i><i class="fab fa-linkedin"></i><i class="fab fa-google-plus-g"></i></p>
+				<p>Các deal du lịch giảm giá đến 60% sẽ được gửi đến bạn</p>
+				<form action="">
+					<input type="text" placeholder="Nhập Email" class="col-xl-8 col-8">
+					<button type="submit" class="col-xl-4 col-4">Đăng ký</button>
+				</form>
+			</div>
 		</section>
 		<footer class="container-fluid">
 			<div class="row">
-				<div class="contact col-xl-5">
+				<div class="contact col-xl-5 col-12">
 					<h1>CÔNG TY CỔ PHẦN DU LỊCH(TMS TRAVEL)</h1>
 					<p>Địa chỉ: Tầng 3, tòa nhà Vimeco, lô E5, phạm Hùng, Phường Trung Hòa,Quận Cầu Giấy, Hà nội</p>
 					<p>Email: dulich@tmstravel.vn</p>
@@ -299,21 +366,21 @@
 						<img src="assets/images/dmca.png" alt="">
 					</div>
 				</div>
-				<div class="about col-xl-2">
+				<div class="about col-xl-2 col-6">
 					<h1>Về TMS</h1>
 					<p>Về chúng tôi</p>
 					<p>Tin tức</p>
 					<p>Hợp tác cùng TMS</p>
 					<p>Cơ hội nghề nghiệp</p>
 				</div>
-				<div class="term col-xl-2">
+				<div class="term col-xl-2 col-6">
 					<h1>ĐIỀU KHOẢN SỬ DỤNG</h1>
 					<p>Điều khoản sử dụng</p>
 					<p>Chính sách bảo mật</p>
 					<p>Hướng dẫn thanh toán</p>
 					<p>Quyền riêng tư</p>
 				</div>
-				<div class="page col-xl-3">
+				<div class="page col-xl-3 col-12">
 					<h1>FANPAGE FACEBOOK</h1>
 					<img src="assets/images/fan-page.jpg" alt="">
 				</div>
@@ -321,7 +388,7 @@
 		</footer>
 		<div class="copy-right">
 			<p>Copyright © 2019 <span style="color: var(--redColor)">TMS Travel</span>. All rights reserved. Design by <span style="color: var(--redColor)">3B Việt Nam</span></p>
-		</div>
+		</div>		
 	<script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
