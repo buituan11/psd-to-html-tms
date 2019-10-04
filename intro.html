@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giới thiệu</title>
+		<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<script type="text/javascript" src="assets/vendor/bootstrap.js"></script>
+	<link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+	<script src="https://kit.fontawesome.com/9da7a20daf.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/common.css">
+ 	<link rel="stylesheet" href="assets/css/intro.css">
+</head>
+<body>
+		<header id="head" class="container-fluid d-none d-xl-block">
+			<div class="header-contact">
+				<p><i class="fas fa-phone-alt"></i> 1900 633 625</p>
+				<p><i class="fas fa-envelope"></i> travel@tmstravel.vn, dulich@tmstravel.vn</p>
+
+				<p>Ngôn ngữ <i class="fas fa-sort-down"></i></p>
+				<p><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-pinterest-p"></i><i class="fab fa-youtube"></i><i class="fab fa-linkedin"></i><i class="fab fa-google-plus-g"></i></p>
+				
+			</div>
+			<div class="header-menu container-fluid">
+				<div class="row">
+					<div class="logo col-xl-4 col-md-3">
+						<img src="assets/images/header/logo.png" alt="">
+					</div>
+					<ul class="menu col-xl-8 col-md-9">
+						<li>
+							<i class="fas fa-search" onclick="search()"></i>
+							<div id="search-inp">
+								<form action="">
+									<input type="text" placeholder="Search">
+									<button type="submit" class="btn btn-success">Search</button>
+								</form>
+							</div>
+						</li>
+						<li>LIÊN HỆ</li>
+						<li>THƯ VIỆN</li>
+						<li>TIN TỨC</li>
+						<li>DỊCH VỤ</li>
+						<li>TOUR</li>
+						<li>GIỚI THIỆU</li>
+						<li>TRANG CHỦ</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</header>
+		<header id="head-mobile" class="container-fluid d-block d-xl-none">
+			<div class="header-contact-m">
+				<p><i class="fas fa-phone-alt"></i> 1900 633 625</p>
+				<p><i class="fas fa-envelope"></i> travel@tmstravel.vn, dulich@tmstravel.vn</p>
+				<p><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-pinterest-p"></i><i class="fab fa-youtube"></i><i class="fab fa-linkedin"></i><i class="fab fa-google-plus-g"></i></p>
+				<p>Ngôn ngữ <i class="fas fa-sort-down"></i></p>				
+			</div>
+			<div class="header-menu-m">
+				<div class="row">
+					<div class="logo-m col-3">
+						<img src="assets/images/header/logo.png" alt="">
+					</div>
+					<div class="menu-m col-9">
+						<button onclick="openMenu()"><i class="fas fa-bars"></i></button>
+						<div id="vertical-menu" style="display: none;">
+							<button onclick="closeMenu()">X</button>
+							<p>TRANG CHỦ</p>
+							<p>GIỚI THIỆU</p>
+							<p>TOUR</p>
+							<p>DỊCH VỤ</p>
+							<p>TIN TỨC</p>
+							<p>THƯ VIỆN</p>
+							<p>LIÊN HỆ</p>
+							<form action="">
+								<input type="text" placeholder="Search">
+								<button type="submit" class="btn btn-success">Search</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="intro">
+			<p>Về TMS Travel</p>
+			<p><a href="#">Trang chủ</a> / <a href="#">Giới thiệu</a> / <a href="#">Về TMS Travel</a></p>
+		</section>
+		<section class="main">
+			<div class="main-btn">
+				<button class="main-btn-id active-main-btn" onclick="render(0)">VỀ TMS TRAVEL</button>
+				<button class="main-btn-id" onclick="render(1)">TMS TUYỂN DỤNG</button>
+			</div>
+			<div class="tms" id="about" style="display: block">
+				<div class="about-tms-1">
+					<h1>1. GIỚI THIỆU TỔNG QUAN</h1>
+					<p><span>Công ty cổ phần Tms du lịch (Tms Travel)</span> được thành lập theo quyết định của phòng đăng ký kinh doanh – Sở kế hoạch đầu tư thành phố Hà Nội với mã doanh nghiệp là: 0108085601 và được Tổng cục du lịch cấp phép kinh doanh lữ hành quốc tế số 0110032017.</p>
+					<p>Nằm trong định hướng phát triển của tập đoàn TMS Group, TMS travel ra đời góp phần vào sự phát triển ngành nghề dịch vụ của tập đoàn dẫn đầu trong lĩnh vực đầu tư bất động sản, lĩnh vực cung ứng lao động, lĩnh vực giáo dục đào tạo trong nhiều năm qua nói riêng và ngành du lịch Việt nam nói chung. TMS Travel tập trung hoạt động kinh doanh chính như:</p>
+					<ul>
+						<li>- Tổ chức tour du lịch trong nước (domestic tours )</li>
+						<li>- Tổ chức tour du lịch nước ngoài ( outbound tours)</li>
+						<li>- Tổ chức tour du lịch quốc tế vào Việt nam (inbound tours)</li>
+						<li>- Tổ chức sự kiện, hội nghị, hội thảo trong vào ngoài nước (MICE)</li>
+						<li>- Dịch vụ visa</li>
+						<li>- Đại lý vé máy bay - đại lý cấp 1 của Vietnam Airlines và một số hãng quốc tế</li>
+						<li>- Đại lý Japan rail pass Nhật Bản tại Việt Nam</li>
+						<li>- Dịch vụ đặt phòng khách sạn trong và ngoài nước</li>
+						<li>- Đầu tư, tư vấn và quảng cáo du lịch</li>
+						<li>- Xúc tiến hợp tác du lịch</li>
+						<li>- Đào tạo nghiệp vụ du lịch</li>
+					</ul>
+					<p>Bên cạnh mảng kinh doanh truyền thống hiện hữu của ngành du lịch, TMS Travel quyết tâm dành một nguồn tài chính dồi dào, tuyển dụng nhân sự kinh nghiệm, ứng dụng công nghệ du lịch cao vào kinh doanh online làm bước phát triển vươt trội, chủ động giải quyết một nhu cầu cấp thiết của xã hội là xây dựng mạng lưới và kết nối cộng động du lịch bằng việc tạo ra một sân chơi du lịch đẳng cấp ứng dụng công nghệ cao vào kinh doanh, một kênh kinh doanh theo mô hình uber travel giúp các công ty du lịch, nhà cung cấp du lịch tăng doanh số bán hàng một cách nhanh nhất và giúp người đi du lịch mua được giá rẻ nhất, trải nghiệm mới nhất, người mua và người bán có thể tương tác trực tiếp nhau ngay sau khi đặt dịch vụ.</p>
+					<p>Công ty cổ phần Tms du lịch có trụ sở công ty chính tại tòa nhà Vimeco, lô E9, Phạm Hùng, Cầu Giấy, Hà nội và đặt các văn phòng, trung tâm, chi nhánh ở một số tình, thành phố lớn trong nước như tại <span>Đà Nẵng, Vinh, Quy Nhơn, Vĩnh Phúc, Hồ Chí Minh, Hải Phòng</span> và tại nước ngoài như: <span>Nhật Bản, Hàn Quốc, Australia, Trung Quốc, Malaysia, Singapore, Indonexia</span> và không ngừng mở rộng để đảm bảo phục vụ khách hàng một cách nhanh nhất trên nhiều vùng địa lý khác nhau.</p>
+					<p>Tms travel là thành viên chính thức của các Tổ chức Du lịch lớn trên thế giới như: Hiệp hội du lịch Châu Á Thái Bình Dương (PATA), Hiệp hội du lịch Nhật Bản(JATA), Hiệp hội du lịch Mỹ (ASTA), Hiệp hội du lịch và các nhà điều hành tour châu Âu, hiệp hội du lịch Malaysia, Hiệp hội du lịch Hàn Quốc, Trung Quốc...Đặc biệt, TMS Travel là thành viên tích cực tham gia hoạt động trong Hiệp hội du lịch Việt nam, hiệp hội và các tổ chức du lịch các tỉnh thành trong cả nước.</p>
+				</div>
+				<div class="about-tms-2">
+					<h1>2. THỊ TRƯỜNG CHÍNH TMS TRAVEL PHÁT TRIỂN</h1>
+					<p><span>Tour du lịch nước ngoài:</span> Làm nhịp cầu đưa du khách Việt nam tới một số quốc gia trên thế giới, nơi mà TMS Group có trụ sở, chi nhánh, đại diện phát triển thành công rực rỡ lĩnh vực Du Học, Lao Động như: Úc, Nhật Bản, Trung Quốc, Hàn Quốc, Mỹ, Pháp, Đức, Anh Tây Ban Nha...Với những thị trường này, sản phẩm du lịch tập trung là các tour du lịch mua sắm, tour du lịch chữa bệnh, tour du học, tour chơi golf, tour nghiên cứu tìm kiếm hợp tác và các tour theo chuyên đề khác theo yêu cầu. Thế mạnh các tour của TMS tổ chức nằm ở kinh nghiệm tổ chức tour quốc tế lâu năm, có cơ sở về con người, vật chất, mối quan hệ tốt với nước sở tại và hoạt động với phương châm " Du lịch cùng các chuyên gia"</p>
+					<p><span>Thị trường trong nước:</span> TMS travel vinh dự là nhà cung cấp dịch cho một số tập đoàn kinh kế lớn, vụ, viện, ban ngành, các bộ, các tỉnh thành,đặc biệt nơi TMS Group có các cơ sở condotel, resort, building, luxury hotels như Đà Nãng, Quy Nhơn, Bình Thuận, Vinh, HCMC, Vĩnh Phúc, cơ quan hành chính, cơ quan doanh nghiệp…Hơn nữa, thị trường online, TMS travel kết nối cộng đồng du lịch trên một Flatform nhằm phục vụ khách hàng online một cách mạnh mẽ. Thế mạnh của du lịch trong nước là xây dựng, tổ chức các tour theo yêu cầu, chủ động giới thiệu các tour và dịch vụ du lịch mới, giá tốt nhất..Mảng du lịch online sẽ giúp du khách mua tour, khách sạn, vé máy bay và các dịch vụ khác một cách rẻ nhất và kết nối trực tiếp với nhà cung cấp.</p>
+					<p><span>Thị trường khách quốc tế vào Việt nam:</span> TMS Travel làm đại diện công ty quản lý nơi đến cho nhiều đối tác Quốc Tế tổ chức tour du lịch vào Việt nam, chủ động tham gia hội trợ du lịch Quốc Tế ở Anh, Úc, Nhật, Đức, Nga, Tây Ban Nha, Ý, Pháp,  Malaysia, Singapore, Thái Lan, Trung Quốc..chủ động tìm kiếm khách hàng, chủ động bán các sản phẩm tinh túy nhất của TMS travel. Các chi nhánh, các đại diện xúc tiến du lịch, cán bộ du học, xuất khẩu lao động của tập đoàn TMS tại nước sở tại làm nền tảng vững mạnh giúp TMS Travel khai thác trực tiếp các nguồn khách quốc tế về Việt Nam.</p>
+					<p><span>Vé máy bay:</span> TMS Travel phát huy thế mạnh từ nguồn lực nội bộ vé phục vụ cho du học, xuất khẩu lao động của tập đoàn đạt doanh số hàng chục triêu USD trong năm qua. AAM ticket TMS Travel làm đại lý vé cấp 1 của Vietnam airlines và một số hãng hàng không quốc tế khác. Thế mạnh của vé máy bay sẽ phát triển lên tầm cao mới khi phát triển kênh vé online, kết nối API với các hãng vé trong và ngoài nước phục vụ người mua săn được vé rẻ nhất, nhanh nhất.</p>
+					<p><span>Dự án sàn du lịch trực tuyến:</span> TMS Travel quyết tâm dành một nguồn tài chính dồi dào, tuyển dụng nhân sự kinh nghiệm, ứng dụng công nghệ du lịch cao vào kinh doanh online làm bước phát triển vươt trội, chủ động giải quyết một nhu cầu cấp thiết của xã hội là xây dựng mạng lưới và kết nối cộng động du lịch bằng việc tạo ra một sân chơi du lịch đẳng cấp ứng dụng công nghệ cao vào kinh doanh, một sàn du lịch trực tuyến giúp các công ty du lịch, nhà cung cấp du lịch tăng doanh số bán hàng một cách nhanh nhất và giúp người đi du lịch mua được giá rẻ nhất, trải nghiệm mới nhất, người mua và người bán có thể tương tác trực tiếp nhau ngay sau khi đặt dịch vụ.</p>
+					<p><span>Nguồn lực nhân sự:</span> TMS Travel luôn ưu tiên hàng đầu trong việc tuyển dụng, đào tạo nhân sự chuyên nghiệp để phát triển kinh doanh. Đội ngũ chuyên gia cao cấp trong nước và quốc tế, cán bộ chuyên viên nhân sự kinh nghiệm được đào tạo chuyên sâu, nhiệt tình, chu đáo, sáng tạo, học hỏi và luôn phục vụ khách hàng một cách tận tâm nhất. Nguồn nhân sự tập hợp các chuyên gia tạo ra các sản phẩm độc đáo, giá rẻ nhưng cung cấp dịch vụ chất lượng tốt nhất dựa trên tiêu chí: ”Trải nghiệm mới nhất, giá rẻ nhất, dịch vụ tiện lợi nhất, chất lượng tốt nhất”</p>
+					<p><span>TMS Travel</span> cùng đội ngũ luôn cố gắng hết mình phục vụ quý khách, cam kết luôn đồng hành cùng với quý khách trên mọi nẻo đường ở một tầm cao mới!</p>
+					<p>Phát huy nền tảng cơ sở vật chất hiện đại trải khắp các thành phố lớn trong nước và văn phòng đại diện đặt tại một số quốc gia trên thế giới, nguồn khách hàng đa dạng phong phú, thương hiệu <span>TMS Group</span> uy tín lâu năm, nguồn tài chính dồi dào, nguồn nhân lực kinh nghiệm được đào tạo chuyên nghiệp trong và ngoài nước, xu thế phát triển du lịch làm ngành kinh tế mũi nhọn,<span>TMS Travel</span> quyết tâm đặt mục tiêu trở thành công ty du lịch quốc tế hàng đầu Việt nam về hợp tác kinh doanh du lịch quốc tế và top 10 công ty du lịch Việt nam về chất lượng phục vụ khách.</p>
+				</div>
+				<div class="about-tms-contact">
+					<h1>3. MỌI CHI TIẾT VUI LÒNG LIÊN HỆ</h1>
+					<div class="vietnam">
+						<h2>Công ty cổ phần TMS Du Lịch (TMS Travel)</h2>
+						<p>Tầng 3, tòa nhà Vimeco, lô E9, phạm Hùng, Phường Trung Hòa, Quận Cầu Giấy, Hà nội</p>
+						<p>Email: dulich@tmstravel.vn</p>
+						<p>Điện thoại: 1900 633 625 , 0247300 4388, hotline: 093 466 9089 Mrs Hằng</p>
+					</div>
+					<div class="foreign">
+						<h2>Japan Rail Pass Vietnam (Đại lý ủy quyền thẻ đi tầu Nhật bản tại Việt nam)</h2>
+						<p>Person incharge :  Mrs Oanh  ( Japanese / English )   Mrs Giang ( English )</p>
+						<p>Tel : (+84) 0243 514 0808 ( Ex 184  Mrs Oanh – Ex 117 Mrs Giang ) </p>
+						<p>Email:  tmsdulich@gmail.com </p>
+						<p>Address: 3 Floor,  C’land  Building , 81 Le Duc  Tho Road , My Dinh Ward,  Nam Tu Liem Dicst, Hanoi City</p>
+					</div>
+				</div>
+			</div>
+			<div class="tms container-fluid" id="employee" style="display: none">
+				<div class="row">
+					<div class="employ col-xl-4 col-6">
+						<img src="assets/images/introduce/need.jpg" alt="">
+						<div class="employ-detail">
+							<h1>Tuyển Kế toán tổng hợp(Du lịch)</h1>
+							<p><i class="far fa-calendar-alt"></i> 29/11/2018</p>
+							<p>Công ty TNHH Cat Tour Việt Nam tuyển Kế toán Tổng hợp. Thông tin liên hệ Mr Sơn 0973.676.570</p>
+						</div>
+					</div>
+					<div class="employ col-xl-4 col-6">
+						<img src="assets/images/introduce/notice.jpg" alt="">
+						<div class="employ-detail">
+							<h1>Tuyển Kế toán tổng hợp(Du lịch)</h1>
+							<p><i class="far fa-calendar-alt"></i> 29/11/2018</p>
+							<p>Công ty TNHH Cat Tour Việt Nam tuyển Kế toán Tổng hợp. Thông tin liên hệ Mr Sơn 0973.676.570</p>
+						</div>
+					</div>
+					<div class="employ col-xl-4 col-6">
+						<img src="assets/images/introduce/employ.jpg" alt="">
+						<div class="employ-detail">
+							<h1>Tuyển Kế toán tổng hợp(Du lịch)</h1>
+							<p><i class="far fa-calendar-alt"></i> 29/11/2018</p>
+							<p>Công ty TNHH Cat Tour Việt Nam tuyển Kế toán Tổng hợp. Thông tin liên hệ Mr Sơn 0973.676.570</p>
+						</div>
+					</div>
+					<div class="employ col-xl-4 col-6">
+						<img src="assets/images/introduce/need.jpg" alt="">
+						<div class="employ-detail">
+							<h1>Tuyển Kế toán tổng hợp(Du lịch)</h1>
+							<p><i class="far fa-calendar-alt"></i> 29/11/2018</p>
+							<p>Công ty TNHH Cat Tour Việt Nam tuyển Kế toán Tổng hợp. Thông tin liên hệ Mr Sơn 0973.676.570</p>
+						</div>
+					</div>
+					<div class="employ col-xl-4 col-6">
+						<img src="assets/images/introduce/notice.jpg" alt="">
+						<div class="employ-detail">
+							<h1>Tuyển Kế toán tổng hợp(Du lịch)</h1>
+							<p><i class="far fa-calendar-alt"></i> 29/11/2018</p>
+							<p>Công ty TNHH Cat Tour Việt Nam tuyển Kế toán Tổng hợp. Thông tin liên hệ Mr Sơn 0973.676.570</p>
+						</div>
+					</div>
+					<div class="employ col-xl-4 col-6">
+						<img src="assets/images/introduce/employ.jpg" alt="">
+						<div class="employ-detail">
+							<h1>Tuyển Kế toán tổng hợp(Du lịch)</h1>
+							<p><i class="far fa-calendar-alt"></i> 29/11/2018</p>
+							<p>Công ty TNHH Cat Tour Việt Nam tuyển Kế toán Tổng hợp. Thông tin liên hệ Mr Sơn 0973.676.570</p>
+						</div>
+					</div>
+					<div class="employ col-xl-4 col-6">
+						<img src="assets/images/introduce/need.jpg" alt="">
+						<div class="employ-detail">
+							<h1>Tuyển Kế toán tổng hợp(Du lịch)</h1>
+							<p><i class="far fa-calendar-alt"></i> 29/11/2018</p>
+							<p>Công ty TNHH Cat Tour Việt Nam tuyển Kế toán Tổng hợp. Thông tin liên hệ Mr Sơn 0973.676.570</p>
+						</div>
+					</div>
+					<div class="employ col-xl-4 col-6">
+						<img src="assets/images/introduce/notice.jpg" alt="">
+						<div class="employ-detail">
+							<h1>Tuyển Kế toán tổng hợp(Du lịch)</h1>
+							<p><i class="far fa-calendar-alt"></i> 29/11/2018</p>
+							<p>Công ty TNHH Cat Tour Việt Nam tuyển Kế toán Tổng hợp. Thông tin liên hệ Mr Sơn 0973.676.570</p>
+						</div>
+					</div>
+					<div class="employ col-xl-4 col-6">
+						<img src="assets/images/introduce/employ.jpg" alt="">
+						<div class="employ-detail">
+							<h1>Tuyển Kế toán tổng hợp(Du lịch)</h1>
+							<p><i class="far fa-calendar-alt"></i> 29/11/2018</p>
+							<p>Công ty TNHH Cat Tour Việt Nam tuyển Kế toán Tổng hợp. Thông tin liên hệ Mr Sơn 0973.676.570</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sign-up">
+				<p><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-pinterest-p"></i><i class="fab fa-youtube"></i><i class="fab fa-linkedin"></i><i class="fab fa-google-plus-g"></i></p>
+				<p>Các deal du lịch giảm giá đến 60% sẽ được gửi đến bạn</p>
+				<form action="">
+					<input type="text" placeholder="Nhập Email" class="col-xl-8 col-8">
+					<button type="submit" class="col-xl-4 col-4">Đăng ký</button>
+				</form>
+			</div>
+		</section>
+		<footer class="container-fluid">
+			<div class="row">
+				<div class="contact col-xl-5 col-12">
+					<h1>CÔNG TY CỔ PHẦN DU LỊCH(TMS TRAVEL)</h1>
+					<p>Địa chỉ: Tầng 3, tòa nhà Vimeco, lô E5, phạm Hùng, Phường Trung Hòa,Quận Cầu Giấy, Hà nội</p>
+					<p>Email: dulich@tmstravel.vn</p>
+					<p>Điện thoại: 1900 633 625 , hotline: 093 466 9089 Mrs Hằng</p>
+					<p>Website: tmstravel.vn; tmsgroup.vn</p>
+					<div class="security">
+						<img src="assets/images/footer/bo-cong-thuong.png" alt="">
+						<img src="assets/images/footer/dmca.png" alt="">
+					</div>
+				</div>
+				<div class="about col-xl-2 col-6">
+					<h1>Về TMS</h1>
+					<p>Về chúng tôi</p>
+					<p>Tin tức</p>
+					<p>Hợp tác cùng TMS</p>
+					<p>Cơ hội nghề nghiệp</p>
+				</div>
+				<div class="term col-xl-2 col-6">
+					<h1>ĐIỀU KHOẢN SỬ DỤNG</h1>
+					<p>Điều khoản sử dụng</p>
+					<p>Chính sách bảo mật</p>
+					<p>Hướng dẫn thanh toán</p>
+					<p>Quyền riêng tư</p>
+				</div>
+				<div class="page col-xl-3 col-12">
+					<h1>FANPAGE FACEBOOK</h1>
+					<img src="assets/images/footer/fan-page.jpg" alt="">
+				</div>
+			</div>
+		</footer>
+		<div class="copy-right">
+			<p>Copyright © 2019 <span style="color: var(--redColor)">TMS Travel</span>. All rights reserved. Design by <span style="color: var(--redColor)">3B Việt Nam</span></p>
+		</div>
+	<script type="text/javascript" src="assets/js/common.js"></script>
+	<script type="text/javascript" src="assets/js/intro.js"></script>
+</body>
+</html>

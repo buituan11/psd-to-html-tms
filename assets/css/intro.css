@@ -1,0 +1,153 @@
+ .intro{
+ 	background: url('../images/introduce/intro.jpg') center center;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	height: 490px;
+  	padding: 0px 60px;
+    padding-top: 287px;
+  	display: flex;
+  	flex-direction: column;
+ }
+ .intro>p, a{ color: white }
+ .intro>p:nth-child(1){
+	font-size: 36px;
+	font-weight: bold;
+ }
+ .intro>p:nth-child(2)>a{ font-size: 16px; }
+ .intro>p:nth-child(2)>a:hover{ color: white }
+@media screen and (max-width: 760px){
+  .intro{
+    height: 350px;
+    padding-top: 160px;
+  }
+}
+.main{
+  text-align: center;
+  padding-top: 60px;
+}
+.main-btn { margin-bottom: 30px; }
+.main-btn>button{ 
+  padding: 18px 30px; 
+  border-radius: 30px; 
+  font-weight: bold;
+  color: var(--redColor);
+  background-color: white; 
+  border: 2px solid var(--redColor);
+}
+.main-btn>button:nth-child(1){ margin-right: 15px; }
+.main-btn>button:nth-child(2){ margin-left: 15px; }
+.main-btn>button:hover, .active-main-btn{
+  color: white !important;
+  background-color: var(--redColor) !important;
+}
+@media screen and (max-width: 760px){
+  .main{
+    padding-top: 30px;
+  }
+}
+/*ABOUTTMS*/
+.tms{
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.about-tms-1{ padding: 0px 60px;  padding-bottom: 57px; }
+.about-tms-1>h1{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+.about-tms-1>p>span{
+  color: black;
+  font-weight: bold;
+}
+.about-tms-1>ul, #about-tms-1>p:nth-child(6){ margin-bottom: 50px; }
+
+.about-tms-2{ 
+  padding: 60px; 
+  background-color: #F5F5F5;
+}
+.about-tms-2>h1{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 100px;
+}
+.about-tms-2>p{ margin-bottom: 50px; } .about-tms-2>p:last-child{ margin-bottom: 0px; }
+.about-tms-2>p>span{ font-weight: bold; }
+@media screen and (max-width: 760px){
+  .about-tms-1{ 
+    padding: 0px 30px;
+  }
+  .about-tms-2{
+    padding: 30px;
+  }
+  .about-tms-2>h1{
+    margin-bottom: 50px;
+  }
+}
+.about-tms-contact{
+  padding: 60px;
+}
+.about-tms-contact>h1{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 0px;
+}
+.vietnam{ margin-bottom: 50px; }
+.vietnam>h2, .foreign>h2{ font-weight: bold; }
+@media screen and (max-width: 760px){
+  .about-tms-contact{
+    padding: 30px;
+  }
+  .vietnam { margin-bottom: 25px }
+}
+/*ABOUTTMS*/
+
+/*EMPLOYTMS*/
+#employee{
+  padding: 0px 60px;
+  padding-bottom: 30px;
+}
+.employ{
+  width: 370px;
+  height: 380px;
+  margin-bottom: 30px;
+}
+.employ>img{ 
+  width: 100%;
+}
+.employ-detail{
+  border: 1px solid #EBEBEB;
+  border-top: none;
+  padding: 15px;
+  padding-right: 35px;
+}
+.employ-detail>h1{
+  font-size: 16px;
+  color: var(--redColor);
+  font-weight: bold;
+}
+.employ-detail>p:nth-child(2){
+  font-size: 14px;
+  color: rgb(145, 145, 145);
+}
+.employ-detail>p:nth-child(3){ font-size: 14px; color: rgb(85, 85, 85);}
+@media screen and (max-width: 760px){
+  #employee{
+    padding: 0px 30px;
+    padding-bottom: 0px;
+  }
+  .employ{
+    margin-bottom: 0px;
+  }
+}
+/*EMPLOYTMS*/
+
