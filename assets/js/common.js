@@ -11,6 +11,14 @@ window.addEventListener("scroll", function srcollMenu () {
 		menu1.style.backgroundColor = '#000000a8';
 	}
 })
+function search (argument) {
+	let search = document.getElementById('search-inp');
+	if (search.style.display === "")
+		search.style.display = "block";
+	else
+		search.style.display = "";
+}
+
 
 function openMenu (argument) {
 	let menu = document.getElementById("vertical-menu");

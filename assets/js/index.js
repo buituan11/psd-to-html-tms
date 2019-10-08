@@ -1,12 +1,4 @@
-﻿function search (argument) {
-	let search = document.getElementById('search-inp');
-	if (search.style.display === "")
-		search.style.display = "block";
-	else
-		search.style.display = "";
-}
-
-let introID = 1;		
+﻿let introID = 1;		
 function intro (id) {
 	introID += id;
 	if (introID > 3) introID = 1;

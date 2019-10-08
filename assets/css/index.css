@@ -40,7 +40,7 @@
 	color: white;
 	padding: 18px 48px;
 }
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
 	.intro{
 		padding: 0px 30px;
 		height: 340px;
@@ -66,13 +66,22 @@
 .comment-detail p, span{
 	color: white;
 }
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
 	.comment{
 		padding: 30px 30px;
 	}
 	.comment-detail{
 		margin-bottom: 10px;
 	}
+}
+@media screen and (max-width: 1024px){
+	.comment-detail img{
+		width: 30px;
+		height: 30px;
+		margin-right: 10px;
+	}
+	.comment-detail{ padding: 0px; }
+	.comment-detail p, span { font-size: 12px; }
 }
 /*COMMENT*/
 
@@ -115,7 +124,7 @@
 	justify-content: center;
 }
 .option-search>button{ padding: 10px 0px; background-color: var(--redColor); color: white; font-weight: bold}
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
 	.option{
 		padding: 30px 30px;
 	}
@@ -160,7 +169,7 @@
 .place-title>p:nth-child(2){
 	font-size: 16px; color:var(--redColor);
 }
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
 	.place{
 		padding: 30px 40px;
 	}
@@ -238,7 +247,7 @@
 	padding: 10px 15px;
 	background-color: var(--redColor);
 }
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
 	.place-slide{
 		justify-content: center;
 	}
@@ -279,7 +288,7 @@
 	padding: 0px 60px;
 	margin-bottom: 30px;
 }
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
 	.destination{
 		padding-top: 30px;
 	}
@@ -368,7 +377,7 @@
 	font-size: 14px;
 	line-height: 1.25;
 }
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
 	.inspire{
 		padding: 30px;
 	}
@@ -408,7 +417,7 @@
 .customer-slide{
 	padding: 0px 60px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	position: absolute;
 	top: 140px;
 }
@@ -513,7 +522,7 @@
 }
 .brand-slide>img:nth-child(1){ left: -30px; }
 .brand-slide>img:nth-child(2){ right: -30px; }
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
 	.customer-title{
 		padding: 30px;
 	}
@@ -526,9 +535,17 @@
 		width: 20%;
 	}
 	.customer-item{
-		width: 90%;
-		margin-right: 0px;
+		width: 100%;
+		margin-right: 30px;
 		text-align: center;
+	}
+}
+@media screen and (max-width: 1024px){
+	.customer-slide{
+		margin: 0px auto;
+	}
+	.customer-item:nth-child(4){
+		margin-right: 0px;
 	}
 }
 /*COMMENT*/

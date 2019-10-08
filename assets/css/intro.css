@@ -17,11 +17,17 @@
  }
  .intro>p:nth-child(2)>a{ font-size: 16px; }
  .intro>p:nth-child(2)>a:hover{ color: white }
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
   .intro{
     height: 350px;
     padding-top: 160px;
   }
+}
+@media screen and (max-width: 400px){
+  .intro>p:nth-child(1){
+    font-size: 30px;
+  }
+  .intro>p:nth-child(2)>a{ font-size: 10px; }
 }
 .main{
   text-align: center;
@@ -42,9 +48,15 @@
   color: white !important;
   background-color: var(--redColor) !important;
 }
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
   .main{
     padding-top: 30px;
+  }
+}
+@media screen and (max-width: 400px){
+  .main-btn>button{
+    padding: 10px 22px;
+    font-size: 12px;
   }
 }
 /*ABOUTTMS*/
@@ -80,7 +92,7 @@
 }
 .about-tms-2>p{ margin-bottom: 50px; } .about-tms-2>p:last-child{ margin-bottom: 0px; }
 .about-tms-2>p>span{ font-weight: bold; }
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
   .about-tms-1{ 
     padding: 0px 30px;
   }
@@ -103,7 +115,7 @@
 }
 .vietnam{ margin-bottom: 50px; }
 .vietnam>h2, .foreign>h2{ font-weight: bold; }
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
   .about-tms-contact{
     padding: 30px;
   }
@@ -140,7 +152,7 @@
   color: rgb(145, 145, 145);
 }
 .employ-detail>p:nth-child(3){ font-size: 14px; color: rgb(85, 85, 85);}
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
   #employee{
     padding: 0px 30px;
     padding-bottom: 0px;
